@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ===== Header ===== */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 150px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.13);
+}
+.nav-menus{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-menus li a{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #222222;
+}
+.menu-bar{
+    display: none;
+}
+.menu-bar img{
+    width: 30px;
+    height: 30px;
+}
+/* ===== Main ===== */
+
+.main-content{
+    padding: 70px 150px;
+    background-image: url(./images/main-bg.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 68px;
+}
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+}
+.main-img{
+    width: 40%;
+}
+.main-img img{
+    width: 100%;
+}
+.main-text h1{
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 38px;
+    color: #fff;
+}
+.main-text p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+    margin: 20px 0;
+}
+.main-buttons{
+    display: flex;
+    gap: 37px;
+}
+.signup{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding: 13px 23px;
+    line-height: 150%;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    border: 0;
+}
+.learn{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: #000;
+    background-color: transparent;
+    border: 0;
+}
+.main-footer{
+    background-color: #3E5C50;
+    padding: 28px 0 38px 0;
+}
+.main-footer h1{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #fff;
+    opacity: 0.3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main-brands{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* ===== Section ===== */
+
+.topic{
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 125%;
+    color: #333333;
+    text-align: center;
+}
+.text{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 120%;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.w-text{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    display: flex;
+    align-items: center;
+}
+.w-text img{
+    margin: 0 5px;
+}
+section{
+    position: relative;
+    padding: 70px 150px;
+}
+.section-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 5px 0;
+}
+.section-box-img{
+    width: 100%;
+}
+.box-content h1{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 136%;
+    margin: 17px 0;
+    color: #333333;
+}
+.box-content p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 138%;
+    color: #333333;
+}
+
+.section-content{
+    display: flex;
+    gap: 40px;
+    margin-top: 65px;
+}
+.section-content .card h1{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 140%;
+    color: #333333;
+    margin: 15px 0;
+}
+.section-content .card p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: #333333;
+}
+
+/* ===== media - Responsive ===== */
+
+@media(max-width: 1150px){
+    header{
+        padding: 25px 100px;
+    }
+    .main-content{
+        padding: 70px 100px;
+    }
+}
+
+@media(max-width: 769px){
+    .nav-menus{
+        display: none;
+    }
+
+    .menu-bar{
+        display: block;
+    }
+    .main-content{
+        padding: 70px;
+    }
+    .main-text{
+        width: 80%;
+    }
+    .main-img{
+        width: 80%;
+    }
+
+    section{
+        padding: 70px;
+    }
+    .w-text{
+        top: 150px;
+    }
+    .section-box{
+        flex-direction: column;
+    }
+    .section-content{
+        flex-direction: column;
+    }
+    .section-content .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 450px){
+    header{
+        padding: 20px 50px;
+    }
+
+    .main-content{
+        padding: 50px;
+    }
+    .main-text h1{
+        font-size: 30px;
+    }
+    .main-text p{
+        font-size: 16px;
+    }
+    .main-buttons{
+        flex-direction: column;
+    }
+
+    section{
+        padding: 50px;
+    }
+    .w-text{
+        position: initial;
+        justify-content: center;
+    }
+}
